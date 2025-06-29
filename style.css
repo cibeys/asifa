@@ -1147,3 +1147,191 @@ body.dark .hobby-name {
         width: 450px;
     }
 }
+
+
+/* ===== TKK IMAGE SLIDER ===== */
+.tkk-slider {
+    position: relative;
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
+}
+
+.tkk-slide-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.tkk-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.tkk-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tkk-slider-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.tkk-slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tkk-slider-dot.active {
+    background: var(--first-color);
+}
+
+.tkk-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tkk-slider:hover .tkk-slider-btn {
+    opacity: 1;
+}
+
+.tkk-slider-prev {
+    left: 10px;
+}
+
+.tkk-slider-next {
+    right: 10px;
+}
+
+.tkk-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(54, 100, 244, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.tkk-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+.tkk-slider {
+    position: relative;
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 200px;
+}
+
+.tkk-slide-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.tkk-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.tkk-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tkk-slider-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.tkk-slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tkk-slider-dot.active {
+    background: var(--first-color);
+}
+
+.tkk-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tkk-slider:hover .tkk-slider-btn {
+    opacity: 1;
+}
+
+.tkk-slider-prev {
+    left: 10px;
+}
+
+.tkk-slider-next {
+    right: 10px;
+}
