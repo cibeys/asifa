@@ -1244,18 +1244,6 @@ body.dark .hobby-name {
     overflow: hidden;
 }
 
-.tkk-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1rem;
-}
-
 .tkk-slider {
     position: relative;
     margin-top: 1rem;
