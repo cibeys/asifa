@@ -1157,10 +1157,6 @@ body.dark .hobby-name {
     overflow: hidden;
     height: 200px;
     width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1rem;
 }
 
 .tkk-slide-container {
