@@ -789,7 +789,7 @@ body.dark .timeline-description li::before {
 .tkk-image {
     margin-top: 1rem;
     border-radius: 8px;
-    overflow: hidden;
+    
     max-height: 300px;
 }
 
